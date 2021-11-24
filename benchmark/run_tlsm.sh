@@ -1,4 +1,4 @@
-./stop_server.sh
+ ./stop_server.sh
 sudo rm -rf ../iotdb-add_tlsm_compaction/distribution/target/apache-iotdb-0.12.1-SNAPSHOT-all-bin/apache-iotdb-0.12.1-SNAPSHOT-all-bin/data &&
 time=$(date "+%Y%m%d-%H%M%S")
 nohup ../iotdb-add_tlsm_compaction/distribution/target/apache-iotdb-0.12.1-SNAPSHOT-all-bin/apache-iotdb-0.12.1-SNAPSHOT-all-bin/sbin/start-server.sh > tlsm_$2_$3_server.log &
