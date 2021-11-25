@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "===lsm=="
-for delta in 10; do
+for delta in 50 10; do
   for mu in 4.0 5.0; do
     for sigma in 1.0 1.25 1.5 1.75 2.0; do
       echo "${delta}_${mu}_${sigma}"
@@ -25,7 +25,7 @@ for delta in 10; do
 done
 
 echo "===tlsm=="
-for delta in 10; do
+for delta in 50 10; do
   for mu in 4.0 5.0; do
     for sigma in 1.0 1.25 1.5 1.75 2.0; do
       echo "${delta}_${mu}_${sigma}"
