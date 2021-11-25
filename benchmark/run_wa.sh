@@ -32,7 +32,7 @@ for delta in 50 10; do
       cp tlsm_write.properties ../iotdb-with_seperation_policy/apache-iotdb-0.12.1-SNAPSHOT-all-bin/conf/iotdb-engine.properties
       ./run_tlsm.sh ${delta} ${mu} ${sigma}
       du -smh ../iotdb-with_seperation_policy/apache-iotdb-0.12.1-SNAPSHOT-all-bin/data
-      cp lsm_compaction.properties ../iotdb-with_seperation_policy/apache-iotdb-0.12.1-SNAPSHOT-all-bin/conf/iotdb-engine.properties
+      cp tlsm_compaction.properties ../iotdb-with_seperation_policy/apache-iotdb-0.12.1-SNAPSHOT-all-bin/conf/iotdb-engine.properties
       ./run_tlsm_compaction.sh ${delta} ${mu} ${sigma} &&
       old_compaction_log_status="`ls -l ../iotdb-with_seperation_policy/apache-iotdb-0.12.1-SNAPSHOT-all-bin/data/data/unsequence/root.sg1/0/0/ | wc -l`"
       while [[ true ]]; do
