@@ -4,7 +4,6 @@ from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
 
-
 def range_float(minimum, maximum, step):
     """
     Generate an arithmetic sequence, given the minimum, maximum and step size

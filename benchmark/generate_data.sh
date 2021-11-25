@@ -1,5 +1,16 @@
-nohup python data_prepare_iotdb_ty.py 10000000 50 > data_prepare_iotdb_ty_10000000_50.log &
-nohup python data_prepare_iotdb_ty.py 10000000 100 > data_prepare_iotdb_ty_10000000_100.log &
-nohup python data_prepare_iotdb_ty.py 10000000 500 > data_prepare_iotdb_ty_10000000_500.log &
-nohup python data_prepare_iotdb_ty.py 10000000 1000 > data_prepare_iotdb_ty_10000000_1000.log &
-nohup python data_prepare_iotdb_ty.py 10000000 5000 > data_prepare_iotdb_ty_10000000_5000.log &
+python3 generate_synthetic_dataset.py 4 1 50 1000000 1
+python3 generate_synthetic_dataset.py 4 1.25 50 1000000 1
+python3 generate_synthetic_dataset.py 4 1.5 50 1000000 1
+python3 generate_synthetic_dataset.py 4 1.75 50 1000000 1
+python3 generate_synthetic_dataset.py 4 2 50 1000000 1
+python3 generate_synthetic_dataset.py 5 1 50 1000000 1
+python3 generate_synthetic_dataset.py 5 1.25 50 1000000 1
+python3 generate_synthetic_dataset.py 5 1.5 50 1000000 1
+python3 generate_synthetic_dataset.py 5 1.75 50 1000000 1
+python3 generate_synthetic_dataset.py 5 2 50 1000000 1
+python3 generate_synthetic_dataset.py 4 1.5 10 1000000 1
+python3 generate_synthetic_dataset.py 4 1.75 10 1000000 1
+python3 generate_synthetic_dataset.py 4 2 10 1000000 1
+python3 generate_synthetic_dataset.py 5 1.5 10 1000000 1
+python3 generate_synthetic_dataset.py 5 1.75 10 1000000 1
+python3 generate_synthetic_dataset.py 5 2 10 1000000 1
